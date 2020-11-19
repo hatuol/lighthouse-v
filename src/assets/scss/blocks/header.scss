@@ -4,6 +4,7 @@
     background-color: $dark-grey;
 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    z-index: $z-index-header;
 }
 .container {
     margin: 0 auto;
@@ -17,9 +18,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    h1 {
-        font-size: 2rem;
-        padding: 0 20px;
+    a {
+        text-decoration: none;
+        h1 {
+            color: $white;
+            font-size: 2rem;
+            padding: 0 20px;
+            transition: 0.3s ease;
+            &:hover {
+                color: $red;
+            }
+        }
     }
     img {
         height: 4rem;

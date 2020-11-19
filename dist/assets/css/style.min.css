@@ -23,7 +23,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .main {
-  padding-top: 10rem; }
+  padding: 10rem 0; }
   .main .container {
     width: 80vw;
     display: flex;
@@ -31,12 +31,17 @@ body {
     align-items: center;
     justify-content: space-between; }
 
+.section-name {
+  width: 100%;
+  margin-top: 4rem; }
+
 /* Blocks */
 .header {
   width: 100vw;
   position: fixed;
   background-color: #0d0d0d;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100; }
 
 .container {
   margin: 0 auto;
@@ -50,9 +55,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .brand h1 {
-    font-size: 2rem;
-    padding: 0 20px; }
+  .brand a {
+    text-decoration: none; }
+    .brand a h1 {
+      color: #fff;
+      font-size: 2rem;
+      padding: 0 20px;
+      transition: 0.3s ease; }
+      .brand a h1:hover {
+        color: #c23838; }
   .brand img {
     height: 4rem;
     object-fit: cover; }
@@ -118,16 +129,13 @@ body {
     border-bottom: 2px solid #c23838;
     color: #a5a5a5; }
 
-.date {
-  position: absolute;
-  bottom: 20px;
-  right: 20px; }
-
 .block {
   width: 30.3%;
+  padding: 1rem;
   margin: 1.5rem;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-radius: 8px;
   background-color: #242424;
@@ -135,11 +143,13 @@ body {
   transition: 0.3s ease; }
   .block:hover {
     box-shadow: 0 8px 10px rgba(194, 56, 56, 0.2); }
+    .block:hover .background-img img {
+      filter: grayscale(0.8) opacity(0.4); }
     .block:hover .block-img {
       filter: saturate(1); }
   .block .content {
     height: 100%;
-    padding: 40px;
+    padding: 3rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -148,6 +158,20 @@ body {
     width: 100%; }
     .block--wide .content {
       width: 80%; }
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .background-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: 0.3s;
+    filter: grayscale(1) opacity(0.2); }
 
 .block-img {
   width: 20%;
@@ -178,6 +202,7 @@ body {
   text-shadow: 0 0 4px #c23838; }
 
 .block-name a {
+  width: fit-content;
   padding-bottom: 1rem;
   display: block;
   text-decoration: none;
@@ -189,4 +214,11 @@ body {
   overflow: hidden;
   padding: 30px 0; }
   .block-about p {
+    color: #a5a5a5;
     padding: 0.5rem 0; }
+
+.date {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  user-select: none; }
