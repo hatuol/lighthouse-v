@@ -26,10 +26,11 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 }
 
 /* Blocks */
 @import "blocks/header.scss";
-@import "blocks/news.scss"
+@import "blocks/hot-news.scss";
+@import "blocks/news.scss";

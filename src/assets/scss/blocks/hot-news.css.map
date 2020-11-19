@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "hot-news.scss"
+    ],
+    "names": [],
+    "file": "hot-news.css"
+}
