@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {{> head }}
 </head>
+
 <body>
 
     <div class="page">
+
         {{> header }}
 
         <main class="main">
-            {{> body }}
+            <div class="container">
+                {{> news}}
+                {{> body }}
+            </div>
         </main>
     </div>
 
     {{> footer }}
 
+    <script src="https://kit.fontawesome.com/0ce3c75c0e.js" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>

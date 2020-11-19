@@ -1,0 +1,21 @@
+$dark-grey: #0d0d0d;
+$grey: #181818;
+$light-grey: #242424;
+$white: #fff;
+$black: #000;
+$red: rgb(194, 56, 56);
+
+$z-index-header: 100;
+
+%underline{
+    &:after {
+        display: block;
+        content: "";
+        border-bottom: solid 1px $red;
+        transform: scaleX(0);
+        transition: transform 150ms ease-in-out;
+    }
+    &:hover:after {
+        transform: scaleX(1);
+    }
+}

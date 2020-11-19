@@ -1,0 +1,46 @@
+.header {
+    width: 100vw;
+    position: fixed;
+    background-color: $dark-grey;
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.container {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    img {
+        height: 4rem;
+        object-fit: cover;
+    }
+}
+.nav {
+    height: 100%;
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        .nav-list__item {
+            padding: 2rem 4rem;
+            a {
+                color: $white;
+                font-size: 1.4rem;
+                text-decoration: none;
+                white-space: nowrap;
+                @extend %underline;
+            }
+        }
+    }
+}
