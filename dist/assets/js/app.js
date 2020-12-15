@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(\".block-about p\").each(function(){\r\n  if ($(this).text().length > 300) {\r\n    $(this).text($(this).text().substring(0, 300) + \"…\");\r\n  }\r\n});\r\n\r\n$(\".hot-news__about p\").each(function(){\r\n    if ($(this).text().length > 1000) {\r\n      $(this).text($(this).text().substring(0, 1000) + \"…\");\r\n    }\r\n  });\r\n  \r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("$(\".block-about p\").each(function(){\r\n  if ($(this).text().length > 300) {\r\n    $(this).text($(this).text().substring(0, 300) + \"…\");\r\n  }\r\n});\r\n\r\n$(\".hot-news__about p\").each(function(){\r\n    if ($(this).text().length > 1000) {\r\n      $(this).text($(this).text().substring(0, 1000) + \"…\");\r\n    }\r\n  });\r\n\r\n  \r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ }),
 

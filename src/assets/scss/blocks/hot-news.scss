@@ -1,6 +1,6 @@
 .hot-news {
     width: 100vw;
-    min-height: 60vh;
+    min-height: 40vh;
     margin: 1.5rem;
     padding: 10px;
     display: flex;
@@ -34,10 +34,11 @@
     padding: 4rem 4rem 4rem 34vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     .hot-news__name {
         width: fit-content;
+        margin-bottom: 2rem;
         a {
             color: $white;
             text-decoration: none;

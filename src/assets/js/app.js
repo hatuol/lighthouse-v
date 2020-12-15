@@ -9,4 +9,5 @@ $(".hot-news__about p").each(function(){
       $(this).text($(this).text().substring(0, 1000) + "…");
     }
   });
+
   

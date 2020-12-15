@@ -36,7 +36,16 @@ body {
     margin-top: 4rem;
 }
 
+.author-list{
+    margin: 0 4rem;
+    li{
+        margin: 1rem 0;
+        list-style: none
+    }
+}
+
 /* Blocks */
 @import "blocks/header.scss";
 @import "blocks/hot-news.scss";
 @import "blocks/news.scss";
+@import "blocks/news-open.scss";
